@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="post" action="/send/">
+      {% csrf_token %}
+     <table border="2" align="center" bgcolor="#87cefa">
+         <tr>
+             <th>MOVIES</th>
+         </tr>
+         <tr>
+             <td>
+                 <input type="checkbox" name="mv" value="uri">
+                uri
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="checkbox" name="mv" value="border">
+                 border
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="checkbox" name="mv" value="kgf">
+                 kgf
+             </td>
+         </tr>
+         <tr>
+             <th>
+                 <button type="submit">send</button>
+             </th>
+         </tr>
+
+
+     </table>
+  </form>
+
+</body>
+</html>

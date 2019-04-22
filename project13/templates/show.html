@@ -1,0 +1,156 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if key == 0 %}
+    <h1>select movies</h1>
+{% endif %}
+<table align="center">
+{% if key == "uri" %}
+    <tr>
+        <th>
+            <img src="{% static 'images\one.jfif' %}" height="150" width="150">
+        </th>
+        <th>
+            <audio controls = controls>
+                 <source src="{% static 'audio\BehChala.mp3' %}" type="audio/mp3" >
+            </audio>
+        </th>
+    </tr>
+{% endif %}
+{% if key == "border" %}
+    <tr>
+        <th>
+            <img src="{% static 'images\b_one.jfif' %}">
+        </th>
+        <th>
+            <audio controls = controls>
+                   <source src="audio\03JaggaJiteya.mp3" >
+            </audio>
+        </th>
+    </tr>
+{% endif %}
+
+
+{% if key == "kgf" %}
+    <tr>
+        <th>
+            <img src="{% static 'images\k_one.jfif' %}" align="center">
+        </th>
+        <th>
+           <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+           </audio>
+        </th>
+    </tr>
+{% endif %}
+
+{% if key == 'border and kgf' %}
+    <tr>
+        <th>
+            <img src="{% static 'images\b_one.jfif' %}">
+        </th>
+        <th>
+            <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+            </audio>
+        </th>
+    </tr>
+        <tr>
+           <th>
+               <img src="{% static 'images\k_one.jfif' %}">
+           </th>
+            <th>
+                <audio controls = controls>
+                    <source src="audio\03JaggaJiteya.mp3" >
+                </audio>
+            </th>
+        </tr>
+    </tr>
+{% endif %}
+
+{% if key == 'uri and kgf' %}
+    <tr>
+        <th>
+           <img src="{% static 'images\two.jfif' %}">
+       </th>
+       <th>
+           <audio controls = controls>
+              <source src="audio\03JaggaJiteya.mp3" >
+           </audio>
+       </th>
+    </tr>
+    <tr>
+        <th>
+           <img src="{% static 'images\k_one.jfif' %}">
+       </th>
+       <th>
+           <audio controls = controls>
+              <source src="audio\03JaggaJiteya.mp3" >
+           </audio>
+       </th>
+    </tr>
+{% endif %}
+
+{% if key == 'uri and border' %}
+    <tr>
+        <th>
+           <img src="{% static 'images\two.jfif' %}">
+        </th>
+        <th>
+           <audio controls = controls>
+              <source src="audio\03JaggaJiteya.mp3" >
+           </audio>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <img src="{% static 'images\b_one.jfif' %}">
+        </th>
+        <th>
+            <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+            </audio>
+        </th>
+    </tr>
+{% endif %}
+
+{% if key == 3 %}
+    <tr>
+       <th>
+          <img src="{% static 'images\one.jfif' %}"  height="150" width="150">
+       </th>
+       <th>
+           <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+           </audio>
+        </th>
+    </tr>
+    <tr>
+        <th>
+           <img src="{% static 'images\k_one.jfif' %}" height="150" width="150">
+        </th>
+        <th>
+            <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+            </audio>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <img src="{% static 'images\b_one.jfif' %}" height="150" width="150">
+        </th>
+        <th>
+            <audio controls = controls>
+                <source src="audio\03JaggaJiteya.mp3" >
+            </audio>
+        </th>
+    </tr>
+{% endif %}
+</table>
+</body>
+</html>
